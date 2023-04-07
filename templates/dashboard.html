@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="navbar">
+		<img src="assets\profile-image.png" class="profile-image">
+		<div class="user-info">
+			<span class="username">Naayif</span><br>
+			<a href="#" class="logout-btn">Logout</a>
+		</div>
+	</div>
+	<div class="main-content">
+		<img src="assets\productImage.jpg" class="product-image">
+		<h1>Product Name</h1>
+		<form>
+			<label for="product-link">Product link:</label>
+			<input type="text" id="product-link" name="product-link">
+
+			<label for="retail-price">Retail price:</label>
+			<input type="text" id="retail-price" name="retail-price">
+
+			<label for="shipping-rate">Expected shipping rate %:</label>
+			<input type="text" id="shipping-rate" name="shipping-rate">
+
+			<label for="max-shipping-duration">Max shipping duration:</label>
+			<input type="text" id="max-shipping-duration" name="max-shipping-duration">
+			International<input type="radio" id="search-type-international" name="search-type" value="international">
+				
+			Select countries<input type="radio" id="search-type-select-countries" name="search-type" value="select-countries">
+
+			<br><br><input type="submit" class="btn-start-search" value="Start search">
+		</form>
+	</div>
+</body>
+</html>
