@@ -1,5 +1,6 @@
 body {
-    background-color: #2c2c2c;
+    /* background-color: #2c2c2c; */
+    background: linear-gradient(to left, #212121, #1b2631);
     color: #fff;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight:bold;
@@ -36,6 +37,8 @@ body {
     width: 100px;
     border-radius: 50%;
     margin-bottom: 10px;
+    border: 4px;
+    border-style:solid;
 }
 
 .username {
@@ -63,18 +66,27 @@ a:hover {
 
 
 .main-content { 
-    margin-top: 50px;   
-    padding: 0px 300px;
+    margin: 30px 100px 50px 250px;   
+
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    /* padding-bottom: 50px; */
 }
 
 .product-image {
-    width: 200px;
+    width: 250px;
     /* border: #fff; */
     border-width: 10px;
     border-style:solid;
     border-radius: 50px;
-    height: auto;
-    margin-bottom: 10px;
 }
 
 input[type="text"]{

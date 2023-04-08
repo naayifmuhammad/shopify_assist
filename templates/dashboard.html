@@ -1,11 +1,13 @@
 {% extends  "base.html"%}
 {% block title %}Dashboard | Home{% endblock %}
-{% block username %}{{'Naayif'}}{% endblock %}
+{% block username %}{{user.name}}{% endblock %}
 {% block content %}
-<img src="{{url_for('static', filename='assets/productImage.jpg')}}" class="product-image">
-		<h1>Product Name</h1>
+<div class="img-container">
+	<img src="{{url_for('static', filename='assets/productImage.jpg')}}" class="product-image">
+	<h1>Product Name</h1>
+</div>
 		<form>
-			<label for="product-link">Product link:</label>
+			<label for="product-link">Enter product link:</label>
 			<input type="text" id="product-link" name="product-link">
 
 			<label for="retail-price">Retail price:</label>
